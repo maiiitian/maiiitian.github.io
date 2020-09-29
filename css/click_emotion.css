@@ -1,0 +1,13 @@
+emotion{
+    position: absolute;
+    color: #000;
+    animation: anite .5s;
+    user-select: none;
+}
+
+@keyframes anite{
+    to{
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+}
