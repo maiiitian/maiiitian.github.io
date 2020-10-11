@@ -88,7 +88,9 @@ a{
     cursor: default;
     user-select: none;
 }
-
+@media(max-width: 850px){
+    .welcome{font-size: 5rem;}
+}
 
 
 .scroll-down{
@@ -157,13 +159,18 @@ a{
 .main{
     margin: auto;
     height: 100%;
-    width:60%;
+    width:65%;
     max-width: 850px;
     box-sizing: border-box;
     /* box-shadow: 10px 0px 10px #ccc; */
     /*background-color: #f3f3f3;*/
     /* opacity: 0.7; */
     z-index: -1; 
+}
+@media(max-width: 850px){
+    .main{
+        width: 100%;
+    }
 }
  .post-list{
     height: 95%;
@@ -254,4 +261,129 @@ a{
     font-size: 15px;
     line-height: 108px;
     border-top: 5px solid #f3f3f3;
+}
+.footer-none{
+    width: 100%;
+    height: 108px;
+    line-height: 108px;
+    text-align: center;
+    border-top: none;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------*/
+.zhuye-index{
+    height: auto;
+    background: url(../images/tkmiz-line-right.png)no-repeat;
+    background-size: 2000px 2000px;
+    background-position-x: 50%;
+    background-position-y: 100%; 
+    background-attachment: fixed;/*图像固定，不随滚动*/
+}
+
+
+
+
+/*-------------------------分类归档界面body--------------------------*/
+.body-aboutMe{
+    width:60%;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    margin-top: 50px;
+    box-shadow: 3px 3px 10px #3f3f3f;  
+    overflow: hidden;
+}
+@media(max-width: 1000px){
+    .body-aboutMe{
+        width: 100%;
+    }
+}
+.body-aboutMe{ background-color: rgba(255, 255, 255, 0.3);}
+.box-aboutMe{
+    /* height: 580px; */
+    box-sizing: border-box; 
+    background-color: #ccc;
+    margin: 10px;  
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0 10px;
+    align-content: stretch;
+}
+.bm-mine{
+    border-bottom: 5px solid #888888;
+}
+.bm-mine h5{
+    font-family: AmaticSC;
+    font-size: 100px;
+    float: left;
+    font-weight: inherit;
+    opacity: 0.5;
+}
+.mit-head{
+    float: right;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px #3f3f3f;  
+    position: relative;
+    margin: 15px;
+    /* vertical-align:middle; */
+}
+.bm-body{
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.bm-link-box{
+    width: 48%;
+    padding: 20px;
+    background-color: #888;
+    /* text-align: left;
+    size: 14px; */
+}
+.bm-link-box ul{
+    list-style-type: none;
+}
+.bm-link-box ul li{
+    margin-top: 25px;
+}
+.bm-link-box .link{
+    text-align: right;
+}
+.bm-discord{
+    height: 100px; 
+    width: 100%; 
+    margin-top: 30px;
+    background-image: url(../images/test_image.jpg); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+.bm-discord p{
+    position: absolute;
+    bottom: 0px;
+    float: left;
+    font-weight: bold;
+}
+
+.bm-word{
+    width: 52%;
+    padding: 10px 20px;
+    border-left: 3px dashed #888;
+    text-align: right;
+}
+.bm-word p{
+    font-size: 15px;
+    margin-top: 20px;
 }
