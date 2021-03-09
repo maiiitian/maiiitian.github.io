@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		window.onload = function(){
+			let emotionArray = ['(; _ ;)','(^ V ^)?','(! . !)','(* v *)^','$ ^ $'];
+			function ClickEmotionShow(emotion){
+				this.color = '#000';
+				this.emotion = emotion;
+				//获取body元素
+		        this.elBody = document.getElementsByTagName("body")[0];
+		        //初始化randomNum
+		        this.randomNum = null;
+		        //初始化字体inde
+		        this.finde = 0;
+		        //初始化className
+		        this.cls = 0;
+			}
+			//定义初始化
+			ClickEmotionShow.porotype.init = function(){
+				let emotion = randomIntFromRange(emotionArray);
+				
+				this.listenMpuse();
+			}
+
+
+		}
+	</script>
+</body>
+</html>

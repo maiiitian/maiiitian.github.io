@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .mit-head {
+            float: left;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid rgb(0, 0, 0, 0.3);
+            /* box-shadow: 3px 3px 10px #3f3f3f;   */
+            position: relative;
+            margin: 15px;
+            transition: transform 0.8s ease-out;
+        }
+
+        /* .mit-head:hover { */
+        /* transform: rotate(180deg); */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div id="box"> <img src="../images/test_image.jpg" alt="mit" class="mit-head"></div>
+    <div id="test">hahahahahaha</div>
+    </div>
+    <div class="enter" style="background-color:lightgray;padding:20px;width:40%;float:right">
+        <h2 style="background-color:white;">被触发的 Mouseenter 事件：<span></span></h2>
+    </div>
+    <script src="../js/jquery-2.1.4/jquery.min.js"></script>
+    <script>
+        let num = 180;
+        let y = 0;
+        $("div.enter").mouseenter(function () { 
+            
+           
+            $(".enter span").text(num);
+            $(".enter span").addClass("span");
+            $(".enter").css("transform","rotate("+num+"deg)");
+            console.log(num); 
+            num += 360;
+        });
+        $("div.enter").mouseleave(function () { 
+            y += 360;
+            $(".enter span").text(num);
+            $(".enter span").addClass("span");
+            $(".enter").css("transform","rotate("+y+"deg)");
+            console.log(y+"y");
+        });
+    </script>
+</body>
+
+</html>

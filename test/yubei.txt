@@ -1,0 +1,19 @@
+ <div class="zhuye-block">
+                <div class="zhuye-icon" style="background-image: url(images/home.png);"></div>
+                <div class="name">主页</div>
+            </div>
+            <div class="zhuye-block">
+                <div class="zhuye-icon" style="background-image: url(images/categories-line.png);"></div>
+                <div class="name">分类</div>
+            </div>
+            <div class="zhuye-block">
+                <div class="zhuye-icon" style="background-image: url(images/file.png);"></div>
+                <div class="name">归档</div>
+            </div>
+            <div class="zhuye-block">
+                <div class="zhuye-icon" style="background-image: url(images/small_logo_180x180\ .png);"></div>
+                <div class="name">关于</div>
+            </div>
+            <div class="zhuye-block">
+                <div class="zhuye-icon" style="background-image: url(images/message.png);"></div>
+                <div class="name">留言</div>

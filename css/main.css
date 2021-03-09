@@ -141,6 +141,7 @@ a{
     background: url(../images/tkmiz-line-small.png)no-repeat;
     background-size: 600px 600px;
     background-position: left bottom;
+    
 }
 .zhuye-page-two{
     background-color: rgba(255, 255, 255, 0.5);
@@ -159,8 +160,8 @@ a{
 .main{
     margin: auto;
     height: 100%;
-    width:65%;
-    max-width: 850px;
+    width:850px;
+    /* max-width: 850px; */
     box-sizing: border-box;
     /* box-shadow: 10px 0px 10px #ccc; */
     /*background-color: #f3f3f3;*/
@@ -172,39 +173,64 @@ a{
         width: 100%;
     }
 }
- .post-list{
+/* ------------------------------------------------------------------------------------------------ */
+.fa{
+    font-size: 10px;
+}
+.post-list{
     height: 95%;
     margin-top: 20px;
     width:100%;
     display: inline-block;
-}  
-.post-block{
-    /* display: flex; */
-    width: 100%;
-    max-height: 500px; 
-    box-sizing: border-box;
+} 
+.post-block {
     margin-top: 50px;
     background-color: #f3f3f3;
-    float: left;
     line-height: 1.5;  
 }
-.post-title{
+
+.post-title {
+    width: 100%;
+    margin-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
-}
-.post-menu-block{
-    display:inline-table;
-    margin: 0px 5px;
-}
-.post-date{
-    font-size: 10px;
-    margin-bottom: 5px;
-}
-.post-body{
-    border-top: 1px solid #3f3f3f ;
     text-align: left;
-    padding: 10px 5px 5px 5px;
-} 
+    float: left;
+}
+
+.post-tags {
+    float: left;
+}
+.post-menu-block {
+    list-style: none;
+    margin: 0px 5px;
+    display: inline;
+}
+
+.post-body{
+    margin: 5px;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: left;
+}
+.post-readmore{
+    text-align: right;
+    width: 100%;
+}
+.post-readmore i{
+    font-size: 12px;
+    float: left;
+    padding-top: 7px;
+}
+.post-readmore span{
+    font-size: 12px;
+    float: left;
+    padding-top: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
 .post-readmore a{
     padding: 5px;
 }
@@ -225,7 +251,7 @@ a{
 }
 
 .pagination{
-    margin: 30px 0px;
+    padding: 30px 0px;
 }
 .page-list{
     width: 100%;
@@ -330,11 +356,19 @@ a{
     width: 100px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 3px 3px 10px #3f3f3f;  
+    border: 4px solid rgb(0, 0, 0,0.3);
+    /* box-shadow: 3px 3px 10px #3f3f3f;   */
     position: relative;
     margin: 15px;
-    /* vertical-align:middle; */
+    transition:  0.8s ease-out;
+    
+    /* transform:rotate(0deg); */
 }
+/* .mit-head-mouse{
+    transform:rotate(180deg);
+    transform:rotate(180deg);
+} */
+
 .bm-body{
     flex-direction: row;
     display: flex;
@@ -343,22 +377,34 @@ a{
 }
 
 .bm-link-box{
-    width: 48%;
-    padding: 20px;
+    width: 40%;
+    padding: 60px 40px 20px;
     background-color: #888;
-    /* text-align: left;
-    size: 14px; */
-}
-.bm-link-box ul{
-    list-style-type: none;
+    
 }
 .bm-link-box ul li{
-    margin-top: 25px;
+    margin-top: 10px;
+    padding: 5px 5px 0px 5px;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(150, 150, 150);  
+    text-align: left; 
+    position: relative;
+    transition-duration: .3s;
+}
+.bm-link-box ul li:hover{
+    background-color: rgb(150, 150, 150);
+}
+.bm-link-box .name{
+    font-size: 15px; 
 }
 .bm-link-box .link{
+    position: absolute;
     text-align: right;
+    right: 0.45em;
+    color: #313131;
 }
 .bm-discord{
+    display: inline-block;
     height: 100px; 
     width: 100%; 
     margin-top: 30px;
@@ -367,18 +413,19 @@ a{
     background-repeat: no-repeat;
     background-clip: border-box;
     background-position: 50% 50%;
-    box-sizing: border-box;
-    position: relative;
+    font-size: 20px;
 }
-.bm-discord p{
+/* .bm-discord a{
     position: absolute;
-    bottom: 0px;
+    vertical-align: bottom;
+    bottom: 0px; 
     float: left;
+    font-size: 20px;
     font-weight: bold;
-}
+} */
 
 .bm-word{
-    width: 52%;
+    width: 60%;
     padding: 10px 20px;
     border-left: 3px dashed #888;
     text-align: right;
